@@ -125,6 +125,14 @@ header h2 span {
     padding: 0 50px;
 }
 
+#work-header h1 {
+    color: white;
+}
+
+#work-header h2 {
+    color: #c49075;
+}
+
 
 /****** CONTACT *******/
 
