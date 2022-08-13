@@ -1,0 +1,453 @@
+/***** BASE STYLES ******/
+
+body {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/****** GRID *******/
+
+.full-width {
+    width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.third-width {
+    width: 33%;
+}
+
+/******* HEADER ********/
+
+header {
+    height: 100%;
+    width: 100%;
+    background: url(../img/black_desk_background.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+header .full-width {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+
+}
+
+#top-header {
+    width: 100%;
+
+}
+
+header h1 {
+    color: white;
+    border-bottom: 3px dashed rosybrown;
+}
+
+header nav {
+    padding-top: 3px;
+}
+
+header nav ul {
+    padding: 0;
+
+}
+
+header nav ul li {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li a {
+    color: white;
+
+}
+
+#bottom-header {
+    width: 100%;
+
+}
+
+#bottom-header h2 {
+    color: white;
+    font-size: 1.5em;
+    padding: 0 20px 5px 20px;
+    line-height: 32px;
+
+}
+
+#bottom-header h2 span {
+    color: rosybrown;
+    font-size: 1.3em;
+
+}
+
+/********* ABOUT **********/
+#about {
+    background: black;
+
+} 
+
+#about .full-width {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+#about h2 {
+    color: rosybrown;
+
+}
+
+#about .half-width {
+    color: white;
+    width: 100%;
+    line-height: 32px;
+    padding: 0 10px;
+
+}
+
+#about p {
+    font-size: 1.1em;
+    padding: 0 20px;
+}
+
+/******* WORK *********/
+#work {
+    background: silver;
+
+}
+
+#work .full-width {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 18px 0;
+
+}
+
+#work .third-width {
+    width: 100%;
+    text-align: center;
+
+}
+
+#work p {
+    font-size: 1.05em;
+    font-weight: bold;
+    line-height: 26px;
+    padding: 0 18px 20px 18px;
+
+}
+
+/******** CONTACT *********/
+#contact {
+    background: black;
+
+}
+
+#contact .full-width {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 18px 0;
+
+}
+
+#contact .half-width {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#contact-img {
+    width: 75%;
+    border: 5px dashed rosybrown;
+}
+
+#contact-info {
+    color: white;
+    flex-flow: row wrap;
+    padding-top: 15px; 
+
+}
+
+#contact-info h2, #contact-info h3, #contact-info a {
+    text-align: center;
+    width: 100%;
+
+}
+
+#contact-info a {
+    color: rosybrown;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+#contact-info ul {
+    display: flex;
+    padding: 0;
+
+}
+
+#contact-info ul li {
+    display: flex;
+    padding-right: 5px;
+
+}
+
+/******** TABLET **********/
+@media screen and (min-width: 786px) {
+
+header nav ul li {
+    font-size: 1.2em;
+
+}
+
+#bottom-header {
+    display: flex;
+    justify-content: center;
+}
+
+#bottom-header h2 {
+    font-size: 1.6em;
+    width: 80%;
+    line-height: 38px;
+
+}
+/**** ABOUT *****/
+
+#about .half-width {
+    font-size: 1.2em;
+    line-height: 38px;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 50%;
+
+}
+
+#about h2 {
+    text-align: center;
+    width: 100%;
+
+}
+
+
+/***** WORK *****/
+
+#work h3 {
+    font-size: 1.3em;
+
+}
+
+#work .third-width {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+#work img {
+    width: 8%;
+}
+
+#work p {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 25px;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+    width: 70%;
+
+}
+
+/***** CONTACT ******/
+
+#contact .full-width {
+    flex-flow: row nowrap;
+
+}
+
+#contact-img {
+    width: 80%;
+}
+
+#contact-info {
+    padding-top: 15px;
+
+}
+
+#contact h2 {
+    font-size: 1.6em;
+
+}
+
+#contact h3 {
+    font-size: 1.3em;
+
+}
+
+#contact a {
+    font-size: 1.4em;
+
+}
+
+#contact-info ul li {
+    padding-right: 12px;
+
+}
+
+}
+
+/********* DESKTOP **********/
+@media screen and (min-width: 1200px) {
+
+header .full-width {
+    margin-top: 12px;
+    padding-bottom: 20px;
+
+}
+
+#top-header {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 14px 0 15px 0;
+
+}
+
+#top-header h1 {
+    border: none;
+    background: white;
+    color: rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+
+}
+
+#top-header nav {
+    width: 75%;
+
+}
+
+#top-header nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+#top-header nav ul li {
+    width: 10%;
+
+}
+
+#bottom-header {
+    width: 70%;
+
+}
+
+#bottom-header h2 {
+    font-size: 3.2em;
+    line-height: 63px;
+
+}
+
+/****** ABOUT ******/
+
+#about .full-width {
+    padding: 14px 0 16px 0;
+
+}
+
+#about h2 {
+    font-size: 1.8em;
+
+}
+
+#about .half-width {
+    font-size: 1.4em;
+    line-height: 48px;
+    width: 45%;
+
+}
+
+/****** WORK ********/
+
+#work .full-width {
+    flex-flow: row nowrap;
+    padding: 32px 0;
+
+}
+
+#work .third-width {
+    margin-top: 10px;
+
+}
+
+#work img {
+    width: 18%;
+
+}
+
+#work h3 {
+    font-size: 1.5em;
+    text-decoration: underline;
+
+}
+
+#work p {
+    font-size: 1.3em;
+    line-height: 32px;
+
+}
+
+/****** CONTACT *******/
+
+#contact .full-width {
+    flex-flow: row nowrap;
+    padding: 32px 0;
+
+}
+
+#contact-img {
+    width: 73%;
+
+}
+
+#contact h2 {
+    font-size: 1.8em;
+
+}
+
+#contact h3 {
+    font-size: 1.5em;
+
+}
+
+#contact a {
+    font-size: 1.5em;
+
+}
+
+
+
+}
+
