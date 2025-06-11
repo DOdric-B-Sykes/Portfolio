@@ -26,9 +26,11 @@ body {
     width: 33%;
 }
 
+/***** MOBILE ********/
+
 /******* HEADER ********/
 
-header {
+ .homepage-hero {
     height: 100%;
     width: 100%;
     background: url(../img/black_desk_background.jpg);
@@ -95,6 +97,7 @@ header nav ul li a {
 
 }
 
+
 /********* ABOUT **********/
 #about {
     background: black;
@@ -126,26 +129,26 @@ header nav ul li a {
     padding: 0 20px;
 }
 
-/******* WORK *********/
-#work {
+/******* SKILLS *********/
+#skills {
     background: silver;
 
 }
 
-#work .full-width {
+#skills .full-width {
     display: flex;
     flex-flow: row wrap;
     padding: 18px 0;
 
 }
 
-#work .third-width {
+#skills .third-width {
     width: 100%;
     text-align: center;
 
 }
 
-#work p {
+#skills p {
     font-size: 1.05em;
     font-weight: bold;
     line-height: 26px;
@@ -210,8 +213,96 @@ header nav ul li a {
 
 }
 
+/********* FOR PROJECTS PAGE  *********/
+
+
+/**** PROJECTS PAGE HEADER STYLING (MOBILE) *******/
+
+.project-header {
+    background: url(../img/black_desk_background.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/******** PROJECT PAGE CONTENT SECTION STYLING (MOBILE) *******/
+
+#project-content {
+    background: silver;
+    padding: 70px 0;
+
+}
+
+#project-content h2 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 28px;
+}
+
+.content-container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 32px 0;
+    height: 100%;
+
+}
+
+.content-container .third-width {
+    margin-top: 10px;
+
+}
+
+.content-container h2 {
+    font-size: 1.5em;
+
+}
+
+
+.content  {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 20px 50px;
+    height: 33%
+
+}
+
+.content img {
+    width: 82%;
+
+}
+
+.content h3 {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    
+}
+
+.content p {
+    font-size: 1.3em;
+    line-height: 32px;
+    margin-top: 0;
+
+}
+
+.content h3 a {
+    color: black;
+    text-decoration: none;
+}
+
+
 /******** TABLET **********/
 @media screen and (min-width: 786px) {
+
+/****** HEADER ********/
 
 header nav ul li {
     font-size: 1.2em;
@@ -248,25 +339,25 @@ header nav ul li {
 }
 
 
-/***** WORK *****/
+/***** SKILLS *****/
 
-#work h3 {
+#skills h3 {
     font-size: 1.3em;
 
 }
 
-#work .third-width {
+#skills .third-width {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 
 }
 
-#work img {
+#skills img {
     width: 8%;
 }
 
-#work p {
+#skills p {
     font-size: 1.2em;
     font-weight: bold;
     line-height: 25px;
@@ -312,6 +403,23 @@ header nav ul li {
 
 }
 
+/********* FOR PROJECTS PAGE  *********/
+
+/******** PROJECT PAGE CONTENT SECTION STYLING (TABLET) *******/
+
+#project-content {
+    padding: 60px 0 40px 0;
+}
+
+.content img {
+    width: 90%;
+}
+
+.content p {
+    padding-left: 15px;
+}
+
+
 }
 
 /********* DESKTOP **********/
@@ -355,7 +463,7 @@ header .full-width {
 }
 
 #top-header nav ul li {
-    width: 10%;
+    width: 8%;
 
 }
 
@@ -389,37 +497,37 @@ header .full-width {
 
 }
 
-/****** WORK ********/
+/****** SKILLS ********/
 
-#work .full-width {
+#skills .full-width {
     flex-flow: row nowrap;
     padding: 32px 0;
 
 }
 
-#work .third-width {
+#skills .third-width {
     margin-top: 10px;
 
 }
 
-#work img {
+#skills img {
     width: 18%;
 
 }
 
-#work h3 {
+#skills h3 {
     font-size: 1.5em;
     text-decoration: underline;
 
 }
 
-#work p {
+#skills p {
     font-size: 1.3em;
     line-height: 32px;
 
 }
 
-/****** CONTACT *******/
+/****** CONTACT (Used for main site page and projects page) *******/
 
 #contact .full-width {
     flex-flow: row nowrap;
@@ -447,7 +555,22 @@ header .full-width {
 
 }
 
+/********* FOR PROJECTS PAGE  *********/
 
+/******** PROJECT PAGE CONTENT SECTION STYLING (DESKTOP) *******/
+
+.content-container {
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.content {
+    width: 33%;
+}
+
+.content img {
+    width: 90%
+}
 
 }
 
